@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas</title>
+    <link rel="stylesheet" href="css/stylish.css"/>
+</head>
+<body>
+    <div id="pagebody">
+        <header>
+            <h1>Loja de Roupas</h1>
+        </header>
+        <main>
+            <h2>Area de Cadastro</h2>
+        
+            <form action="index.html" method="GET">
+                <fieldset>
+                    <legend>Informações de Cadastro</legend>
+                    <label>
+                        Nome: <input type="text" name="txt_nome" placeholder="Seu nome completo" required/>
+                     </label>
+                     <label class="label-50">
+                        E-mail <input type="email" name="txt_email" placeholder="Seu melhor e-mail" required/>
+                     </label>
+                     <label class="label-50">
+                        Telefone: <input type="number" name="txt_telefone" placeholder="Seu telefone" required/>
+                     </label>
+                     <label  class="label-50">
+                        Data de nascimento: <input type="date" name="txt_data_nasc" required/>
+                     </label>
+                     <label  class="label-50">
+                        CPF: <input type="number" name="txt_cpf" placeholder="Somente números" required/>
+                     </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label  class="label-50">
+                        Rua: <input type="text" name="txt_rua" required/>
+                    </label>
+                    <label  class="label-50">
+                        Bairro: <input type="text" name="txt-bairro" required/>
+                    </label>
+                    <label  class="label-50">
+                        Cidade: <input type="text" name="txt_cidade" required/>
+                    </label>
+                    <label  class="label-50">
+                        Estado:
+                        <select>
+                            <option value="">Selecione...</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PR">Paraná</option>
+                        </select>
+                    </label>
+                    <label class="label-50">
+                        CEP: <input type="number" name="cep" required/>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Senha</legend>
+                    <label class="label-50" >
+                        Crie uma senha de 6 dígitos: <input type="password" name="senha" required/>
+                    </label>
+                    <label class="label-50">
+                        Confirme a senha: <input type="password" name="senha" minlength="6" maxlength="6" required/>
+                    </label>
+                </fieldset>   
+
+                <fieldset>
+                    <legend>Forma de pagamento</legend>
+                    <label>
+                        Selecione uma forma de pagamento:
+                        <select>
+                            <option value="">Selecione...</option>
+                            <option value="cartao_credito">Cartão de crédito</option>
+                            <option value="pix">PIX</option>
+                            <option value="boleto">Boleto Bancário</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+
+                <p class="center">
+                    <button type="submit" class="botao-enviar">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </p>
+
+            </form>
+
+        </main>
+        <header>
+        <footer class="center">
+            Loja de Hardware Ltda
+            <address>
+                Rua da Fatec, 286
+                - Jaú - <abbr class="" title="São Paulo - Brasil">SP</abbr>
+            </address>
+        </footer>
+        </header>
+    </div>
+</body>
+</html>
