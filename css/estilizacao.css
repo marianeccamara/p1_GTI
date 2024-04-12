@@ -1,7 +1,7 @@
 * {margin: 0; padding: 0;}
 
 body {
-    background: #caf2be; padding: 5%; font-family: "Trebuchet MS";
+    background: #caf2be; padding: 5%; font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #div {
@@ -10,17 +10,19 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
     margin: 0 auto;
+
 }
 
 header{
     background-color: #f67975;
     padding: 2%;
     border-bottom: 1px solid #69898d;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
     text-align: center;
-    text-shadow: 1px 1px 2px ;
+    text-decoration: tomato;
     text-transform: uppercase;
     background-color: #f67975;
 }
