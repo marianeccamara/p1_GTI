@@ -18,86 +18,127 @@
                 <fieldset>
                     <legend>Informações de Cadastro</legend>
                     <label>
-                        Nome: <input type="text" name="txt_nome" placeholder="Seu nome completo" required/>
+                        Nome: <input type="text" name="nome" placeholder="Nome completo" required/>
                      </label>
-                     <label class="label-50">
-                        E-mail <input type="email" name="txt_email" placeholder="Seu melhor e-mail" required/>
+                     <label class="classe01">
+                        E-mail <input type="email" name="email" placeholder="E-mail ativo" required/>
                      </label>
-                     <label class="label-50">
-                        Telefone: <input type="number" name="txt_telefone" placeholder="Seu telefone" required/>
+                     <label class="classe01">
+                        Telefone: <input type="number" name="telefone" placeholder="Seu telefone" required/>
                      </label>
-                     <label  class="label-50">
-                        Data de nascimento: <input type="date" name="txt_data_nasc" required/>
+                     <label  class="classe01">
+                        CPF: <input type="number" name="cpf" placeholder="CPF do dono da conta" required/>
                      </label>
-                     <label  class="label-50">
-                        CPF: <input type="number" name="txt_cpf" placeholder="Somente números" required/>
+                     <label  class="classe01">
+                        Data de nascimento: <input type="date" name="nascimento" required/>
                      </label>
                 </fieldset>
+
                 <fieldset>
-                    <legend>Endereço</legend>
-                    <label  class="label-50">
-                        Rua: <input type="text" name="txt_rua" required/>
+                    <legend>Endereço para entrega</legend>
+                    <label  class="classe01">
+                        Rua: <input type="text" name="rua" placeholder="Rua para entrega" required/>
                     </label>
-                    <label  class="label-50">
-                        Bairro: <input type="text" name="txt-bairro" required/>
+                    <label  class="classe01">
+                        Bairro: <input type="text" name="bairro" placeholder="Bairro para entrega" required/>
                     </label>
-                    <label  class="label-50">
-                        Cidade: <input type="text" name="txt_cidade" required/>
+                    <label  class="classe01">
+                        Cidade: <input type="text" name="cidade" placeholder="Cidade para entrega" required/>
                     </label>
-                    <label  class="label-50">
+                    <label  class="classe01">
+                        Referencia: <input type="text" name="Referencia" placeholder="Referencia proxima a residencia" required/>
+                    </label>
+                    <label  class="classe01">
                         Estado:
                         <select>
                             <option value="">Selecione...</option>
                             <option value="SP">São Paulo</option>
-                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="PR">Paraná</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
                             <option value="PR">Paraná</option>
                         </select>
                     </label>
-                    <label class="label-50">
+                    <label class="classe01">
                         CEP: <input type="number" name="cep" required/>
                     </label>
                 </fieldset>
+
                 <fieldset>
+                    <legend>Login</legend>
+                    <label class="classe01" >
+                        Login da conta: <input type="password" name="senha" required/>
                     <legend>Senha</legend>
-                    <label class="label-50" >
-                        Crie uma senha de 6 dígitos: <input type="password" name="senha" required/>
+                    <label class="classe01" >
+                        Senha (minimo: 8 digitos): <input type="password" name="senha" required/>
                     </label>
-                    <label class="label-50">
-                        Confirme a senha: <input type="password" name="senha" minlength="6" maxlength="6" required/>
+                    <label class="classe01">
+                        Confirmar a senha: <input type="password" name="senha" minlength="8" maxlength="16" required/>
                     </label>
                 </fieldset>   
 
                 <fieldset>
-                    <legend>Forma de pagamento</legend>
+                    <legend>Metodo de pagamento preferivel</legend>
                     <label>
-                        Selecione uma forma de pagamento:
+                        Selecione sua forma de pagamento:
                         <select>
-                            <option value="">Selecione...</option>
-                            <option value="cartao_credito">Cartão de crédito</option>
-                            <option value="pix">PIX</option>
-                            <option value="boleto">Boleto Bancário</option>
+                            <option value="">Selecionar...</option>
+                            <option value="credito">Cartão de crédito</option>
+                            <option value="debito">Cartão de debito</option>
+                            <option value="QR">QR code PIX</option>
+                            <option value="boleto">Boleto</option>
                         </select>
                     </label>
                 </fieldset>
 
+                <fieldset>
+                    <legend>Estilo do comprador</legend>
+                    <label>
+                        Qual sera seu estilo de compra?
+                        <select>
+                            <option value="">Selecionar...</option>
+                            <option value="atacado">Atacado</option>
+                            <option value="varejo">Varejo</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </label>
 
-                <p class="center">
-                    <button type="submit" class="botao-enviar">Enviar</button>
-                    <button type="reset">Limpar</button>
+                    <legend>Possui empresa no ramo?</legend>
+                    <label>
+                        Possui empresa de roupas?
+                        <select>
+                            <option value="">Selecionar...</option>
+                            <option value="atacado">Sim</option>
+                            <option value="varejo">Não</option>
+                            <option value="outro">Pretendo ter</option>
+                        </select>
+                    </label>
+
+                    <legend>Pretende compar com que frequencia?</legend>
+                    <label>
+                        Qual sera sua frequencia de compra?
+                        <select>
+                            <option value="">Selecionar...</option>
+                            <option value="alta">Alta</option>
+                            <option value="media">Media</option>
+                            <option value="baixa">Baixa</option>
+                            <option value="espr">Esporadica</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <p class="style2">
+                    <button type="submit" class="confirmar">Criar Conta</button>
+                    <button type="reset">Apagar dados</button>
                 </p>
 
             </form>
-
         </main>
-        <header>
-        <footer class="center">
-            Loja de Hardware Ltda
-            <address>
-                Rua da Fatec, 286
-                - Jaú - <abbr class="" title="São Paulo - Brasil">SP</abbr>
-            </address>
-        </footer>
-        </header>
     </div>
 </body>
 </html>
