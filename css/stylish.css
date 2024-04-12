@@ -45,7 +45,7 @@ input, select {
 }
 
 input:focus {
-    background: lightyellow; border: 2px solid rgb(185, 30, 147); outline: none;
+    background:#f67975; border: 2px solid rgb(185, 30, 147); outline: none;
 }
 
 .classe01{
@@ -72,7 +72,7 @@ button:active { background-color: #666;}
 }
 
 header{
-    background-color: #eee;
+    background-color: #f67975;
     padding: 2%;
     border-radius: 12px;
     font-style: normal;
