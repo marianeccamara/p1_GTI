@@ -1,0 +1,114 @@
+* {margin: 0; padding: 0;}
+
+a {
+    text-align: center;
+    text-transform: uppercase;
+}
+body {
+    background: #caf2be; padding: 5%; font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#div {
+    background-color:  ##caf2be;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    margin: 0 auto;
+}
+
+header{
+    background-color: #f67975 ;
+    padding: 2%;
+}
+
+header h1 {
+    text-align: center;
+    text-shadow: 1px 1px 2px #89c0cd;
+    text-transform: uppercase;
+}
+
+main {
+    padding: 2%;
+}
+
+footer {
+    background: #f67975;
+    text-align: center;
+    padding: 2%;
+    border-top:1px solid #999;
+}
+
+h2 {
+    text-align: center;
+}
+
+.sobre-nos {
+    margin-top: 2%;
+    text-align: start;
+}
+
+#sobre-nos aside video {
+    max-width: 100%;
+}
+
+#sobre-nos aside, #sobre-nos article {
+    background: #eee;
+    width: 42%;
+    float: left;
+    margin: 1%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#sobre-nos article {
+    width: 54%;
+    text-align: left;
+    padding: 1%
+}
+
+#sobre-nos article p {
+    margin-bottom: 5%;
+    line-height: 25px;
+}
+
+article h3 {
+    text-transform: uppercase;
+}
+
+#fotos {
+    overflow: hidden;
+    clear: both;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
+}
+
+figure {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    float: left;
+    padding: 5px;
+    max-width: 30%;
+    margin: 1%;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 10px;
+}
+
+figcaption {
+    background-color: #222;
+    border-radius: 10px;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+}
